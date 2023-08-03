@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- MAIN -->
+    <main>
+      <div>
+        <h1 id="title">My Survey Form</h1>
+        <p id="description">This is a personal survey form created by Neal Barton James J. Matira</p>
+        <div>
+      <div>
+        <form id="survey-form">
+            <fieldset>
+            <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required/> </label>
+            <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required/> </label>
+            <label id="number-label" for="id">ID <input id="number" type="number" placeholder ="Enter your ID" min = "1" max ="1000"/></label >
+          </fieldset>
+          <fieldset>
+            <label id="dropdown-label" for="dropdown">
+              <select id="dropdown" name="relationship-status">
+                <option value="''">(Relationship Status)</option>
+                <option value="1">Single</option>
+                <option value="2">In a relationship</option>
+                <option value="3">Married</option>
+                <option value="4">Divorced</option>
+                <option value="3">Widowed</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label id="male-label" for="male"><input id="male-radio" name="sex" type="radio" value="male"/>Male</label>
+            <label id="female-label" for="female"><input id="female-radio" name="sex" type="radio" value="female"/>Female
+            </fieldset>
+            <fieldset>
+            </label><label><input id="checkbox-1" name="checkbox" type="checkbox" value="Happy" />Happy</label>
+            <label><input id="checkbox-2" name="checkbox" type="checkbox" value="Sad" />Sad</label>
+            <label><input id="checkbox-3" name="checkbox" type="checkbox" value="Angry" />Angry</label>
+            <label><input id="checkbox-4" name="checkbox" type="checkbox" value="Excited" />Excited</label>
+            <label><input id="checkbox-5" name="checkbox" type="checkbox" value="Others" />Others</label>
+          </fieldset>
+          <fieldset>
+            <label><textarea id="textarea" placeholder="How was your day?"></textarea></label>
+          </fieldset>
+            <input type="submit" id="submit">
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+  </body>
+</html>
