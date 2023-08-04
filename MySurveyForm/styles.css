@@ -1,0 +1,116 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin:0 0;
+  /* USE WHEN NO INTERNET*/
+  /* background-image: url("band.jpg") */
+  background-image: url("https://images.unsplash.com/photo-1578736641330-3155e606cd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW4lMjBsaWdodHN8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f1f2f3;
+  font-family:verdana;
+  font-size: 16px;
+}
+.form-title {
+  text-align: center;
+  width: 60vw;
+  max-width: 800px;
+  min-width: 300px;
+  background-color: #1f2b1ff3;
+  padding: 10px 0;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+p, h2 {
+  text-align: center;
+  margin: 1em auto;
+}
+h2 {
+  font-size: 14px;
+  margin: none none;
+  padding: none none;
+}
+form {
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 300px;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 0.7em 1em;
+  /* border-bottom: 3px solid #3b3b4f; */
+  background-color: #1f2b1ff3;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+  }
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  }
+
+input, textarea, select {
+  margin: 10px 0;
+  width: 98%;
+  min-height: 2rem;
+  border-radius: 15px; 
+  }
+input, textarea {
+  font-size: 14px;
+  background-color: #2f3b2f;
+  border: 1px solid #2f3b2f;
+  color: #ffffff;
+  }
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #5f6b5f;
+  border-color: #e1e2e3;
+  min-width: 300px;
+  }
+input[type="file"] {
+  text-align: left;
+  padding: 10px 5px;
+  padding-bottom: 2px;
+  }
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  }
+.row {
+  display: flex;
+  }
+.col-1,.col-2 {
+  flex:50%
+  }
+  a {
+    color: #f1f2f3;
+  }
+  
+  a:visited {
+    color: #f1f2f3;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }

@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="uft-8">
-    <title>My Survey Form</title>
+    <title>Band Registration Form</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <!-- MAIN -->
     <main>
-      <div>
-        <h1 id="title">My Survey Form</h1>
-        <p id="description">This is a personal survey form created by Neal Barton James J. Matira</p>
-        <div>
+      <div class="form-title">
+        <h1 id="title">Band Registration Form</h1>
+        <p id="description">This is a band registration form created by Neal Barton James J. Matira</p>
+      </div>
       <div>
         <form id="survey-form">
-            <fieldset>
+            <fieldset><h3>Personal Details</h3>
             <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required/> </label>
             <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required/> </label>
             <label id="number-label" for="id">ID <input id="number" type="number" placeholder ="Enter your ID" min = "1" max ="1000"/></label >
           </fieldset>
           <fieldset>
+            <h3>Relationship Status</h3>
             <label id="dropdown-label" for="dropdown">
               <select id="dropdown" name="relationship-status">
-                <option value="''">(Relationship Status)</option>
+                <option value="''">(Choose one)</option>
                 <option value="1">Single</option>
                 <option value="2">In a relationship</option>
                 <option value="3">Married</option>
@@ -31,24 +32,40 @@
               </select>
             </label>
           </fieldset>
-          <fieldset>
-            <label id="male-label" for="male"><input id="male-radio" name="sex" type="radio" value="male"/>Male</label>
-            <label id="female-label" for="female"><input id="female-radio" name="sex" type="radio" value="female"/>Female
+          <fieldset><h3>Sex</h3>
+            <label id="male-label" for="male"><input id="male-radio" name="sex" type="radio" class="inline" value="male"/>Male</label>
+            <label id="female-label" for="female"><input id="female-radio" name="sex" type="radio" class="inline" value="female"/>Female
             </fieldset>
-            <fieldset>
-            </label><label><input id="checkbox-1" name="checkbox" type="checkbox" value="Happy" />Happy</label>
-            <label><input id="checkbox-2" name="checkbox" type="checkbox" value="Sad" />Sad</label>
-            <label><input id="checkbox-3" name="checkbox" type="checkbox" value="Angry" />Angry</label>
-            <label><input id="checkbox-4" name="checkbox" type="checkbox" value="Excited" />Excited</label>
-            <label><input id="checkbox-5" name="checkbox" type="checkbox" value="Others" />Others</label>
+            <fieldset><h3>Instrument/s</h3>
+            <div class="row"> 
+              <div class="col-1">
+                <label for="checkbox-1" ><input id="checkbox-1" name="checkbox" type="checkbox" class="inline" value="electric-guitar" />Electric Guitar</label>
+                <label for="checkbox-2" ><input id="checkbox-2" name="checkbox" type="checkbox" class="inline" value="bass-guitar" />Bass Guitar</label>
+                <label for="checkbox-3" ><input id="checkbox-3" name="checkbox" type="checkbox" class="inline" value="acoustic-guitar" />Acoustic Guitar</label>
+                <label for="checkbox-4" ><input id="checkbox-4" name="checkbox" type="checkbox" class="inline" value="drums" />Drums</label>
+              </div>
+              <div class="col-2">
+                <label for="checkbox-5" ><input id="checkbox-5" name="checkbox" type="checkbox" class="inline" value="vocals" />Vocals</label>
+                <label for="checkbox-6" ><input id="checkbox-6" name="checkbox" type="checkbox" class="inline" value="keys" />Keys</label>
+                <label for="checkbox-7" ><input id="checkbox-7" name="checkbox" type="checkbox" class="inline" value="others" />Others</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset>
-            <label><textarea id="textarea" placeholder="How was your day?"></textarea></label>
+          <fieldset><h3>Tell us about you</h3>
+            <label for="textarea"><textarea id="textarea" placeholder="I am an allrounder with 3 years of band experience..." rows="3" cols="25"></textarea></label>
+          </fieldset>
+          <fieldset><h3>Sample Track</h3>
+          <label for="track">Upload a sample track (optional) <input id="track" type="file" name="file"/></label>
           </fieldset>
             <input type="submit" id="submit">
         </form>
       </div>
     </main>
     <!-- FOOTER -->
+    <footer>
+          <div>
+            <p>Copyright &copy; 2023 <NAME><a href="https://www.linkedin.com/in/neeeal/">Neal Barton James J. Matira</a></p>
+          </div>
+        </footer>
   </body>
 </html>
