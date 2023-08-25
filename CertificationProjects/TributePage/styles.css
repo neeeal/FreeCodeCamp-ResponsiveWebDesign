@@ -1,6 +1,122 @@
-#image {
-    display: block;
-    max-width:100%;
-    width:auto;
-    height:auto;
-}
+    body{
+        margin:0;
+        padding:0;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        min-width:300px;
+        background-color:floralwhite;
+    }
+
+    #title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 4vw;
+        margin: 3vh 0 0 0 ;
+        padding:0;
+        
+    }
+
+    #subtitle {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.5vw;
+    }
+
+    #img-div {
+        display:flex;
+        flex-direction: column;
+        flex:1;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;
+    }
+
+    #image {
+        display: block;
+        max-width:100%;
+        max-height:70vh;
+        object-fit: cover;
+        width:101vw;
+        height:auto;
+        overflow: hidden !important;
+        margin:0;
+        padding:0;
+    }
+
+    .divider {
+        width:100%;
+        height:5vw;
+        margin:0;
+        padding:0;
+    }
+
+    #img-caption{
+        margin:0;
+        font-size: 2.2vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    #sub-caption{
+        margin:0;
+        font-size: 1.6vw;
+        padding: 0;
+        text-align: center;   
+    }
+
+    #tribute-info {
+        display:flex;
+        flex-direction: column;
+        flex:1;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        justify-content: center;
+    }
+
+    #description {
+        text-align: justify;
+        margin:0;
+        padding:0;
+        padding-bottom:3vw;
+        width:50vw;
+        font-size: 1.6vw;
+        line-height: 2.3vw;
+    }
+
+    #enna-kyo {
+        width: 50vw;
+        border: transparent 1px solid;
+        border-radius: 25px;
+        margin:0 0 3vw  0;
+        padding:0;
+    }
+
+    #description:first-of-type {
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    #footer {
+        display:flex;
+        justify-content: center;
+    }
+
+    #footer p {
+        text-align: center;
+        margin:0;
+        padding:0;
+        padding-bottom:3vw;
+        font-size: 1vw;
+        width:64vw;
+    }
+
+    a:link, a:visited {
+        color:cadetblue;
+    }
+
+    a:hover, a:active {
+        color: blue;
+    }
