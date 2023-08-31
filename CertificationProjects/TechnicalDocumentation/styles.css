@@ -3,3 +3,105 @@
         width:100vw;
     }
 }
+
+* {
+    border:0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0c1d;
+    color:#f4fdff;
+}
+
+.main-doc {
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.main-section {
+    position:relative;
+    width: 78vw;
+    left:20vw;
+    /* right: 0;
+    bottom: 0 ;
+    top: 0; */
+    border-bottom: .3vw solid black;
+    padding: 1vh 0;
+    overflow:visible;
+}
+
+.header {
+    font-size: 4vh;
+    /* font-weight: bold; */
+}
+
+.main-section p {
+    text-align: justify;
+    font-size: 2.5vh;
+}
+
+ul li {
+    font-size: 2vh;
+}
+
+.language-python {
+    padding: 5px;
+    font-size: 2vh;
+}
+
+#navbar {
+    position: fixed !important;
+    Top:-1px;
+    left:2vw;
+    width: 16%;
+    /* height:100%; */
+    overflow: hidden;
+    z-index: 999;
+    background: #474973;
+}
+
+#navbar header {
+    font-size: 4.5vh;
+}
+
+#navbar li {
+    list-style-type: none;
+    /* background: #161b33; */
+    padding: 10px 0 10px 5px;
+
+  }
+
+  #navbar li:last-of-type {
+    padding-top: 10px;
+  }
+  #navbar a{
+    color:#f4fdff;
+    display:block;
+    width:100%;
+    height:100%;
+  }
+
+  #navbar a:visited {
+    color:#f4fdff;
+  }
+  #navbar a:hover, #navbar a:active {
+    color:#0d0c1d;
+    /* background: #f4fdff; */
+  }
+  #navbar li:hover {
+    background:#a69cac;
+  }
+
+  /* 
+  TO DO:
+  > DESIGN CODE BLOCKS
+  > INDENT AND ALIGN LISTS
+  > RE-ADJUST TEXT SIZES
+  > CONTINUE BEUTIFYING NAVBAR
+  > DELIVER PROPER SPACING NOT BLOCK OF HUGE TEXTS
+  > OPTIONAL: ADD PHOTOS
+   */
